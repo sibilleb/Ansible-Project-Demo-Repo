@@ -1,0 +1,16 @@
+---
+- name: "Update package cache"
+  package:
+    update_cache: true
+  when: ansible_os_family in ["Debian", "RedHat"]
+
+- name: "Install common packages"
+  package:
+    name: "{{ common_packages }}"
+    state: present
+  when: common_packages is defined
+
+- name: "Configure timezone"
+  timezone:
+    name: "{{ timezone }}"
+  when: timezone is defined
