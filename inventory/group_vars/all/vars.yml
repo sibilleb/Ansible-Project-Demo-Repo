@@ -1,0 +1,15 @@
+---
+timezone: "UTC"
+
+common_packages:
+  - curl
+  - wget
+  - vim
+  - htop
+  - git
+
+app_user: "appuser"
+app_group: "appgroup"
+
+environment_type: "development"
+debug_mode: true
