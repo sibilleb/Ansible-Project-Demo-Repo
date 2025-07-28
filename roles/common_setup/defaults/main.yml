@@ -1,0 +1,14 @@
+---
+common_setup_timezone: "UTC"
+
+common_setup_packages:
+  - curl
+  - wget
+  - vim
+  - htop
+  - git
+
+common_setup_app_user: "appuser"
+common_setup_app_group: "appgroup"
+
+common_setup_environment_type: "development"
